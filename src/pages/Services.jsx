@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { SERVICES, PROJECTS } from '../data/siteData';
@@ -38,7 +38,6 @@ function ServiceDetail({ service, isEven }) {
       <div className="container service-detail__inner">
         <div className={`service-detail__img fade-in ${inView ? 'visible' : ''}`}>
           <img src={service.image} alt={service.title} loading="lazy" />
-          {/* <div className="service-detail__icon-badge">{service.icon}</div> */}
         </div>
         <div className={`service-detail__text fade-in delay-1 ${inView ? 'visible' : ''}`}>
           <div className="label">{service.subtitle}</div>
@@ -119,6 +118,26 @@ export default function Services() {
   const [heroRef, heroIn] = useInView();
   const [projectsRef, projectsIn] = useInView();
 
+  const scrollRef   = useRef(null);
+  const isDown      = useRef(false);
+  const startX      = useRef(0);
+  const scrollLeft  = useRef(0);
+
+  const onMouseDown = (e) => {
+    isDown.current      = true;
+    startX.current      = e.pageX - scrollRef.current.offsetLeft;
+    scrollLeft.current  = scrollRef.current.scrollLeft;
+  };
+  const onMouseLeave = () => { isDown.current = false; };
+  const onMouseUp    = () => { isDown.current = false; };
+  const onMouseMove  = (e) => {
+    if (!isDown.current) return;
+    e.preventDefault();
+    const x    = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    scrollRef.current.scrollLeft = scrollLeft.current - walk;
+  };
+
   return (
     <>
       <Helmet>
@@ -128,6 +147,7 @@ export default function Services() {
       </Helmet>
 
       <main className="services-page">
+
         {/* PAGE HERO */}
         <section className="page-hero" ref={heroRef}>
           <div className="page-hero__bg" />
@@ -167,7 +187,7 @@ export default function Services() {
 
         <div className="divider" />
 
-        {/* ── FEATURED PROJECTS ── */}
+        {/* FEATURED PROJECTS */}
         <section className="featured-projects" ref={projectsRef}>
           <div className="container">
             <div className={`featured-projects__header fade-in ${projectsIn ? 'visible' : ''}`}>
@@ -178,14 +198,21 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="projects-grid">
+            <div
+              className="projects-scroll"
+              ref={scrollRef}
+              onMouseDown={onMouseDown}
+              onMouseLeave={onMouseLeave}
+              onMouseUp={onMouseUp}
+              onMouseMove={onMouseMove}
+            >
               {PROJECTS.map((project, i) => (
                 <ProjectCard key={project.id} project={project} index={i} />
               ))}
             </div>
 
             <div className={`featured-projects__footer fade-in ${projectsIn ? 'visible' : ''}`}>
-              <Link to="/contact" className="btn btn-outline">View All Projects →</Link>
+              <Link to="/projects" className="btn btn-outline">View All Projects →</Link>
             </div>
           </div>
         </section>
@@ -202,6 +229,7 @@ export default function Services() {
             <Link to="/contact" className="btn btn-primary">Request a Free Assessment →</Link>
           </div>
         </section>
+
       </main>
     </>
   );

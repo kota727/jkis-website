@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useInView } from '../hooks/useInView';
+import Partners from './Partners';
 import './About.css';
 
 const values = [
@@ -184,6 +185,7 @@ export default function About() {
             <Link to="/contact" className="btn btn-primary">Get in Touch →</Link>
           </div>
         </section>
+        <Partners />
       </main>
     </>
   );

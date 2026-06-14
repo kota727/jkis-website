@@ -24,7 +24,7 @@ export default function Footer() {
           </p>
           <div className="footer__social">
             <a href="mailto:info@jkis.in" aria-label="Email">✉</a>
-            <a href="tel:+919999999999" aria-label="Phone">☎</a>
+            <a href="tel:91 9742761520" aria-label="Phone">☎</a>
           </div>
         </div>
 
