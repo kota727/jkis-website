@@ -1,32 +1,22 @@
-/* ====================================================
-   NAVBAR — White & Blue Theme
-   Large logo · Underline active · Solid blue CTA
-   ==================================================== */
-
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
   padding: 0;
   background: #ffffff;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
 }
 .navbar--scrolled {
   background: #ffffff;
-  box-shadow: 0 2px 24px rgba(0,0,0,0.08);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
 }
-
-/* ── inner container ── */
 .navbar__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 100px;
 }
-
-/* ── logo ── */
 .navbar__logo {
   text-decoration: none;
   display: flex;
@@ -34,26 +24,9 @@
   height: 100%;
   flex-shrink: 0;
 }
-
-/*
-  LOGO IMAGE DIMENSIONS FOR THIS STYLE
-  ─────────────────────────────────────
-  Recommended file: PNG with transparent background
-  Width:   600px
-  Height:  200px
-  Ratio:   3:1 (landscape)
-  Renders: 220px × 74px in the navbar
-
-  If using JPEG with black bg:
-  - keep mix-blend-mode: multiply below
-  - it blends the black away on white bg
-
-  For transparent PNG:
-  - remove mix-blend-mode line entirely
-*/
 .navbar__logo-img {
-  width: 220px;
-  height: 74px;
+  width: 260px;
+  height: 86px;
   object-fit: contain;
   object-position: left center;
   display: block;
@@ -61,8 +34,6 @@
   transition: opacity 0.2s;
 }
 .navbar__logo-img:hover { opacity: 0.85; }
-
-/* ── nav links ── */
 .navbar__links {
   display: flex;
   align-items: stretch;
@@ -73,54 +44,50 @@
   display: inline-flex;
   align-items: center;
   font-family: 'Syne', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #374151;
   text-decoration: none;
-  padding: 0 16px;
+  padding: 0 20px;
   border-bottom: 3px solid transparent;
   transition: color 0.2s, border-color 0.2s;
   white-space: nowrap;
 }
 .navbar__link:hover {
   color: #1a56db;
-  border-bottom-color: rgba(26,86,219,0.25);
+  border-bottom-color: rgba(26,86,219,0.3);
 }
 .navbar__link--active {
   color: #1a56db;
   border-bottom-color: #1a56db;
 }
-
-/* ── CTA button ── */
 .navbar__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: 'Syne', sans-serif;
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
-  padding: 0 24px;
-  margin-left: 16px;
-  background: linear-gradient(135deg, #1a56db, #3b82f6);
+  padding: 0 28px;
+  margin-left: 20px;
+  background: #1a56db;
   border-radius: 8px;
-  height: 44px;
+  height: 48px;
   align-self: center;
   border: none;
   transition: all 0.2s ease;
   white-space: nowrap;
-  box-shadow: 0 2px 12px rgba(26,86,219,0.25);
+  box-shadow: 0 2px 12px rgba(26,86,219,0.3);
 }
 .navbar__cta:hover {
-  background: linear-gradient(135deg, #1e40af, #1a56db);
-  box-shadow: 0 4px 20px rgba(26,86,219,0.35);
+  background: #1e40af;
+  box-shadow: 0 4px 20px rgba(26,86,219,0.4);
   transform: translateY(-1px);
 }
-
-/* ── burger (mobile) ── */
 .navbar__burger {
   display: none;
   flex-direction: column;
@@ -132,7 +99,7 @@
 }
 .navbar__burger span {
   display: block;
-  width: 24px; height: 2px;
+  width: 26px; height: 2px;
   background: #374151;
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -141,9 +108,7 @@
 .navbar__burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .navbar__burger.open span:nth-child(2) { opacity: 0; }
 .navbar__burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* ── mobile menu ── */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .navbar__burger { display: flex; }
   .navbar__links {
     display: none;
@@ -155,15 +120,13 @@
     height: 100vh;
     gap: 8px;
     background: #ffffff;
-    border-right: none;
   }
   .navbar__links--open { display: flex; }
   .navbar__link {
-    font-size: 1.4rem;
-    padding: 14px 36px;
+    font-size: 1.5rem;
+    padding: 14px 40px;
     border-bottom: none;
     border-left: 3px solid transparent;
-    color: #374151;
   }
   .navbar__link--active {
     color: #1a56db;
@@ -177,13 +140,13 @@
   }
   .navbar__cta {
     margin-left: 0;
-    margin-top: 16px;
-    padding: 12px 40px;
+    margin-top: 20px;
+    padding: 14px 48px;
     height: auto;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
-@media (max-width: 600px) {
-  .navbar__logo-img { width: 170px; height: 57px; }
-  .navbar__inner { height: 74px; }
+@media (max-width: 480px) {
+  .navbar__logo-img { width: 190px; height: 64px; }
+  .navbar__inner { height: 80px; }
 }
