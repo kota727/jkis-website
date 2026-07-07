@@ -1,32 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { SERVICES, CLIENTS, STATS, REVIEWS, WHY_CHOOSE } from '../data/siteData';
 import { useInView } from '../hooks/useInView';
 import './Home.css';
 
-/* ─── HERO ─────────────────────────────────────── */
+/* ─── HERO ─── */
 function Hero() {
-  const words = ['Surveillance', 'Fire Safety', 'Access Control', 'Automation', 'Biometrics'];
-  const [idx, setIdx] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setIdx(i => (i + 1) % words.length), 2400);
-    return () => clearInterval(t);
-  }, []);
-
   return (
     <section className="hero" aria-label="Hero">
-      <div className="hero__bg">
-        <div className="hero__grid" />
-        <div className="hero__glow hero__glow--1" />
-        <div className="hero__glow hero__glow--2" />
-      </div>
+      <div className="hero__bg" />
+      <div className="hero__grid" />
+      <div className="hero__glow hero__glow--1" />
+      <div className="hero__glow hero__glow--2" />
       <div className="hero__content container">
         <div className="hero__left">
           <div className="label fade-in visible">Trusted Across India Since 2021</div>
           <h1 className="h1 hero__headline fade-in visible delay-1">
             End-to-End<br />
-            <span className="gold">{words[idx]}</span><br />
+            <span className="gold">Smart</span><br />
             Solutions
           </h1>
           <p className="hero__sub fade-in visible delay-2">
@@ -46,10 +38,12 @@ function Hero() {
         </div>
         <div className="hero__right fade-in visible delay-2">
           <div className="hero__card-grid">
-            {SERVICES.slice(0,4).map(s => (
+            {SERVICES.slice(0, 4).map(s => (
               <div key={s.id} className="hero__mini-card">
                 <span className="hero__mini-icon">{s.icon}</span>
-                <span className="hero__mini-label">{s.title.split(' ')[0]}<br />{s.title.split(' ').slice(1).join(' ')}</span>
+                <span className="hero__mini-label">
+                  {s.title.split(' ')[0]}<br />{s.title.split(' ').slice(1).join(' ')}
+                </span>
               </div>
             ))}
           </div>
@@ -63,7 +57,7 @@ function Hero() {
   );
 }
 
-/* ─── STATS ─────────────────────────────────────── */
+/* ─── STATS ─── */
 function StatsBar() {
   const [ref, inView] = useInView();
   const [counts, setCounts] = useState(STATS.map(() => 0));
@@ -95,7 +89,7 @@ function StatsBar() {
   );
 }
 
-/* ─── SERVICES PREVIEW ───────────────────────────── */
+/* ─── SERVICES PREVIEW ─── */
 function ServicesPreview() {
   const [ref, inView] = useInView();
   return (
@@ -136,7 +130,7 @@ function ServicesPreview() {
   );
 }
 
-/* ─── WHY CHOOSE US ──────────────────────────────── */
+/* ─── WHY CHOOSE US ─── */
 function WhyChoose() {
   const [ref, inView] = useInView();
   return (
@@ -149,17 +143,25 @@ function WhyChoose() {
             <h2 className={`h2 fade-in ${inView ? 'visible' : ''}`}>
               The JKIS<br /><span className="gold">Difference</span>
             </h2>
-            <p className={`fade-in delay-1 muted ${inView ? 'visible' : ''}`} style={{lineHeight:'1.8', marginTop:'16px'}}>
+            <p className={`fade-in delay-1 ${inView ? 'visible' : ''}`}
+              style={{ lineHeight: '1.8', marginTop: '16px', color: '#475569' }}>
               We combine deep technical expertise with a genuine commitment to our clients'
               safety and success. Every project is treated as if it's our own facility.
             </p>
-            <Link to="/about" className={`btn btn-primary fade-in delay-2 ${inView ? 'visible' : ''}`} style={{marginTop:'32px'}}>
+            <Link
+              to="/about"
+              className={`btn btn-primary fade-in delay-2 ${inView ? 'visible' : ''}`}
+              style={{ marginTop: '32px' }}
+            >
               About JKIS →
             </Link>
           </div>
           <div className="why-section__grid">
             {WHY_CHOOSE.map((w, i) => (
-              <div key={w.title} className={`why-card fade-in delay-${(i % 3) + 1} ${inView ? 'visible' : ''}`}>
+              <div
+                key={w.title}
+                className={`why-card fade-in delay-${(i % 3) + 1} ${inView ? 'visible' : ''}`}
+              >
                 <span className="why-card__icon">{w.icon}</span>
                 <h4 className="why-card__title">{w.title}</h4>
                 <p className="why-card__desc">{w.desc}</p>
@@ -172,7 +174,7 @@ function WhyChoose() {
   );
 }
 
-/* ─── REVIEWS ─────────────────────────────────────── */
+/* ─── REVIEWS ─── */
 function Reviews() {
   const [ref, inView] = useInView();
   return (
@@ -189,10 +191,11 @@ function Reviews() {
         </div>
         <div className="reviews__grid">
           {REVIEWS.map((r, i) => (
-            <article key={r.id} className={`review-card fade-in delay-${(i % 3) + 1} ${inView ? 'visible' : ''}`}>
-              <div className="review-card__stars">
-                {'★'.repeat(r.rating)}
-              </div>
+            <article
+              key={r.id}
+              className={`review-card fade-in delay-${(i % 3) + 1} ${inView ? 'visible' : ''}`}
+            >
+              <div className="review-card__stars">{'★'.repeat(r.rating)}</div>
               <p className="review-card__text">"{r.text}"</p>
               <div className="review-card__author">
                 <div className="review-card__avatar">{r.avatar}</div>
@@ -209,13 +212,15 @@ function Reviews() {
   );
 }
 
-/* ─── CLIENTS ─────────────────────────────────────── */
+/* ─── CLIENTS ─── */
 function Clients() {
   const [ref, inView] = useInView();
   return (
     <section className="section-sm clients-section" ref={ref}>
       <div className="container">
-        <div className="label" style={{justifyContent:'center', marginBottom:'40px'}}>Our Prestigious Clients</div>
+        <div className="label" style={{ justifyContent: 'center', marginBottom: '40px' }}>
+          Our Prestigious Clients
+        </div>
         <div className="clients__marquee-wrapper">
           <div className="clients__marquee">
             {[...CLIENTS, ...CLIENTS].map((c, i) => (
@@ -224,9 +229,14 @@ function Clients() {
                   src={c.logo}
                   alt={`${c.name} - JKIS client`}
                   loading="lazy"
-                  onError={e => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
+                  onError={e => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
                 />
-                <span className="client-logo__fallback" style={{display:'none'}}>{c.name}</span>
+                <span className="client-logo__fallback" style={{ display: 'none' }}>
+                  {c.name}
+                </span>
               </div>
             ))}
           </div>
@@ -236,7 +246,7 @@ function Clients() {
   );
 }
 
-/* ─── CTA BANNER ──────────────────────────────────── */
+/* ─── CTA BANNER ─── */
 function CTABanner() {
   const [ref, inView] = useInView();
   return (
@@ -244,8 +254,10 @@ function CTABanner() {
       <div className="cta-banner__bg" />
       <div className="container cta-banner__inner">
         <div className={`fade-in ${inView ? 'visible' : ''}`}>
-          <h2 className="h2">Ready to Secure Your <span className="gold">Facility?</span></h2>
-          <p className="muted" style={{marginTop:'12px', fontSize:'1.05rem'}}>
+          <h2 className="h2">
+            Ready to Secure Your <span className="gold">Facility?</span>
+          </h2>
+          <p style={{ marginTop: '12px', fontSize: '1.05rem', color: '#475569' }}>
             Get a free site assessment and customized quote within 24 hours.
           </p>
         </div>
@@ -258,13 +270,16 @@ function CTABanner() {
   );
 }
 
-/* ─── HOME PAGE ───────────────────────────────────── */
+/* ─── HOME PAGE ─── */
 export default function Home() {
   return (
     <>
       <Helmet>
         <title>JK Integrated Solutions | Smart Safety & Security Systems India</title>
-        <meta name="description" content="JKIS delivers end-to-end fire alarm, CCTV surveillance, access control, biometrics, network infrastructure & building automation across India. 500+ projects delivered." />
+        <meta
+          name="description"
+          content="JKIS delivers end-to-end fire alarm, CCTV surveillance, access control, biometrics, network infrastructure & building automation across India. 500+ projects delivered."
+        />
         <link rel="canonical" href="https://www.jkis.in/" />
       </Helmet>
       <main>
