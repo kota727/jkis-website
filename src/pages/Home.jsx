@@ -7,6 +7,13 @@ import './Home.css';
 
 /* ─── HERO ─── */
 function Hero() {
+  const heroServices = [
+    { id: 'fire-alarm', icon: 'FA', title: 'Fire Alarm' },
+    { id: 'sprinkler', icon: 'SP', title: 'Fire Sprinkler System' },
+    { id: 'surveillance', icon: 'CC', title: 'CCTV' },
+    { id: 'access-control', icon: 'AC', title: 'Access Control' },
+  ];
+
   return (
     <section className="hero" aria-label="Hero">
       <div className="hero__bg" />
@@ -38,12 +45,10 @@ function Hero() {
         </div>
         <div className="hero__right fade-in visible delay-2">
           <div className="hero__card-grid">
-            {SERVICES.slice(0, 4).map(s => (
-              <div key={s.id} className="hero__mini-card">
-                <span className="hero__mini-icon">{s.icon}</span>
-                <span className="hero__mini-label">
-                  {s.title.split(' ')[0]}<br />{s.title.split(' ').slice(1).join(' ')}
-                </span>
+            {heroServices.map(service => (
+              <div key={service.id} className="hero__mini-card">
+                <span className="hero__mini-icon">{service.icon}</span>
+                <span className="hero__mini-label">{service.title}</span>
               </div>
             ))}
           </div>

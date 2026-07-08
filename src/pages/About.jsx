@@ -68,7 +68,7 @@ export default function About() {
                 loading="lazy"
               />
               <div className="about-summary__badge">
-                <span className="about-summary__badge-num">3+</span>
+                <span className="about-summary__badge-num">5</span>
                 <span>Years of Excellence</span>
               </div>
             </div>
