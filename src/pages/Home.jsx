@@ -8,7 +8,7 @@ import './Home.css';
 /* ─── HERO ─── */
 function Hero() {
   const heroServices = [
-    { id: 'fire-alarm', icon: 'FA', title: 'Fire Alarm' },
+    { id: 'fire-alarm', icon: 'FA', title: 'Fire Alarm /n Systems ' },
     { id: 'sprinkler', icon: 'SP', title: 'Fire Sprinkler System' },
     { id: 'surveillance', icon: 'CC', title: 'CCTV' },
     { id: 'access-control', icon: 'AC', title: 'Access Control' },
