@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="footer__top container">
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src="/jkis-logo.jpeg" alt="JK Integrated Solutions" className="footer__logo-img" />
+            <img src="/jkis-logo.png" alt="JK Integrated Solutions" className="footer__logo-img" />
           </div>
           <p className="footer__tagline">
             End-to-end smart integrations for safety, security & automation — trusted across India since 2021.

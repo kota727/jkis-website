@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo">
-          <img src="/jkis-logo.jpeg" alt="JK Integrated Solutions" className="navbar__logo-img" />
+          <img src="/jkis-logo.png" alt="JK Integrated Solutions" className="navbar__logo-img" />
         </Link>
 
         <nav className={`navbar__links ${open ? 'navbar__links--open' : ''}`}>
