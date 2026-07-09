@@ -267,7 +267,7 @@ export const CLIENTS = [
 ];
 
 export const STATS = [
-  { value: 3, suffix: '+', label: 'Years of Excellence' },
+  { value: 5, suffix: '+', label: 'Years of Excellence' },
   { value: 500, suffix: '+', label: 'Projects Delivered' },
   { value: 16, suffix: '+', label: 'Prestigious Clients' },
   { value: 8, suffix: '', label: 'Core Service Verticals' },
