@@ -146,8 +146,8 @@ export const SERVICES = [
 export const PROJECTS = [
   {
     id: 'flipkart-warehouse',
-    category: 'Industrial Warehouse',
-    categoryTag: 'IW',
+    // category: 'Industrial Warehouse',
+    // categoryTag: 'IW',
     title: 'Flipkart Fulfilment Centre — Hyderabad',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
     desc: 'End-to-end fire sprinkler, hydrant, and CCTV surveillance deployment across a 4-lakh sq ft high-piled storage warehouse facility. Systems designed and commissioned to NBC and NFPA 13 standards with full AHJ sign-off.',
@@ -156,8 +156,8 @@ export const PROJECTS = [
   },
   {
     id: 'manipal-Ayurvedic pharmacy',
-    category: 'Healthcare',
-    categoryTag: 'HC',
+    // category: 'Healthcare',
+    // categoryTag: 'HC',
     title: 'Manipal Hospitals — Fire System Upgrade',
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80',
     desc: 'Mission-critical fire alarm system upgrade across a live 350-bed hospital campus — executed with zero disruption to patient care operations.',
@@ -176,8 +176,8 @@ export const PROJECTS = [
   // },
   {
     id: 'tata-zudio',
-    category: 'Commercial',
-    categoryTag: 'CO',
+    // category: 'Commercial',
+    // categoryTag: 'CO',
     title: 'Tata Zudio — Biometric Access Rollout',
     image:'/zudio.jpeg',
     desc: 'Comprehensive addressable fire alarm system deployed across a live multi-floor facility with zero disruption to daily operations. Smoke detectors, heat sensors, and manual call points integrated into a single panel with 24/7 monitoring — fully compliant with NBC and local fire authority norms from day one.',
@@ -186,8 +186,8 @@ export const PROJECTS = [
   },
   {
     id: 'yazaki-suppression',
-    category: 'Manufacturing',
-    categoryTag: 'MF',
+    // category: 'Manufacturing',
+    // categoryTag: 'MF',
     title: 'Yazaki India — Fire Suppression System',
     image:'/yazaki1.jpeg',
     desc: 'Custom-designed fire suppression and gas detection systems for an automotive manufacturing plant, meeting international standards. Passed all regulatory audits without a single remark — from site survey to final handover.',
@@ -196,8 +196,8 @@ export const PROJECTS = [
   },
   {
     id: 'cars24-branches',
-    category: 'Commercial',
-    categoryTag: 'CO',
+    // category: 'Commercial',
+    // categoryTag: 'CO',
     title: 'Cars24 — Multi-Branch Security Rollout',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     desc: 'Comprehensive addressable fire alarm system deployed across a live multi-floor facility with zero disruption to daily operations. Smoke detectors, heat sensors, and manual call points integrated into a single panel with 24/7 monitoring — fully compliant with NBC and local fire authority norms from day one.',
