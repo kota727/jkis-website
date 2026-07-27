@@ -148,7 +148,7 @@ export const PROJECTS = [
     id: 'flipkart-warehouse',
     // category: 'Industrial Warehouse',
     // categoryTag: 'IW',
-    title: 'Flipkart Fulfilment Centre — Hyderabad',
+    title: 'Flipkart Fulfilment Centre ',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
     desc: 'End-to-end fire sprinkler, hydrant, and CCTV surveillance deployment across a 4-lakh sq ft high-piled storage warehouse facility. Systems designed and commissioned to NBC and NFPA 13 standards with full AHJ sign-off.',
     services: ['Sprinkler Systems', 'Hydrant & Hose Reel', 'CCTV Surveillance'],
