@@ -22,12 +22,6 @@
 .services-nav__item:hover {
   color: #1a56db; background: rgba(26,86,219,0.06);
 }
-.services-nav__item span:first-child {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 28px; height: 20px;
-  background: rgba(26,86,219,0.1); border-radius: 4px;
-  font-size: 0.62rem; font-weight: 800; color: #1a56db;
-}
 
 /* ─── SERVICE DETAIL ─── */
 .service-detail { padding: 80px 0; background: #ffffff; }
