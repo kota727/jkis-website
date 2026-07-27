@@ -208,22 +208,22 @@ export const PROJECTS = [
 
 // Clients sorted alphabetically
 export const CLIENTS = [
-  { name: 'ABB', logo: 'https://www.jkis.in/ABB.png' },
-  { name: 'Aishaya', logo: 'https://www.jkis.in/images/aishaya.png' },
-  { name: 'Bicon', logo: 'https://www.jkis.in/images/bicon.png' },
-  { name: 'Bosch', logo: 'https://www.jkis.in/images/bosch.png' },
-  { name: 'Cars24', logo: 'https://www.jkis.in/images/cars.png' },
-  { name: 'Energy Corp', logo: 'https://www.jkis.in/images/energy.png' },
-  { name: 'Flipkart', logo: 'https://www.jkis.in/images/flipkart.png' },
-  { name: 'Government of India', logo: 'https://www.jkis.in/images/gov.png' },
-  { name: 'Herman Miller', logo: 'https://www.jkis.in/herman%20miller.png' },
-  { name: 'Manipal Hospitals', logo: 'https://www.jkis.in/images/manipal.png' },
-  { name: 'Metro Rail', logo: 'https://www.jkis.in/images/metro.jpg' },
-  { name: 'NVent', logo: 'https://www.jkis.in/images/nvent.png' },
-  { name: 'Siemens', logo: 'https://www.jkis.in/images/download%20-4-.png' },
-  { name: 'Tata', logo: 'https://www.jkis.in/images/tata.png' },
-  { name: 'Yazaki', logo: 'https://www.jkis.in/images/yazaki.png' },
-  { name: 'Zudio', logo: 'https://www.jkis.in/images/zudio.png' },
+  { name: 'ABB', logo: '/abblogo.png' },
+  { name: 'Alshaya', logo: '/alshaya.png' },
+  { name: 'Biocon', logo: '/Biocon.png' },
+  { name: 'Bosch', logo: '/boschlogo.png' },
+  { name: 'Cars24', logo: '/cars24.png' },
+  { name: 'Energy Corp', logo: '/energycorp.png' },
+  { name: 'Flipkart', logo: '/flipkart.png' },
+  { name: 'Government of India', logo: '/artofliving.png' },
+  { name: 'Herman Miller', logo: '/hermanlogo.png' },
+  { name: 'Manipal Hospitals', logo: '/manipallogo.png' },
+  { name: 'Metro Rail', logo: '/metrologo.png' },
+  { name: 'NVent', logo: '/nventlogo.png' },
+  { name: 'Siemens', logo: '/siemenslogo.png' },
+  { name: 'Tata', logo: '/tata.png' },
+  { name: 'Yazaki', logo: '/yazaki.png' },
+  { name: 'Zudio', logo: '/zudiologo.png' },
 ];
 
 export const STATS = [
