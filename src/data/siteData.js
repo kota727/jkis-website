@@ -6,7 +6,7 @@
 export const SERVICES = [
   {
     id: 'access-control',
-    icon: 'ACB',
+    // icon: 'ACB',
     title: 'Access Control & Biometrics',
     subtitle: 'Fingerprint · RFID · Face Recognition · Flap Barriers · Turnstiles',
     image: '/AC.png',
@@ -26,28 +26,8 @@ export const SERVICES = [
     ],
   },
   {
-    id: 'building-management',
-    icon: 'BMS',
-    title: 'Building Management Systems',
-    subtitle: 'IBMS · HVAC · Nurse Calling · Energy Monitoring',
-    image: '/BMS.png',
-    shortDesc: 'Integrate and automate all building sub-systems through a single intelligent platform.',
-    longDesc: `Integrated Building Management Systems (IBMS) unifies sub-systems via open
-    protocols like BACnet, Modbus™, and OPC. From 50 to 100,000 analog/digital points,
-    our BMS solutions handle HVAC, fire, intrusion, nurse calling, energy monitoring,
-    and voice evacuation across 1 to 1000 buildings from a single pane of glass.`,
-    features: [
-      'HVAC primary & individual room control',
-      'Nurse calling & patient monitoring system',
-      'Fire, intrusion & gas detection integration',
-      'Energy data & voice evacuation system',
-      'Remote multi-building management',
-      'BACnet, Modbus™ & OPC compatible',
-    ],
-  },
-  {
     id: 'fire-alarm',
-    icon: 'FA',
+    // icon: 'FA',
     title: 'Fire Alarm Systems',
     subtitle: 'Conventional · Addressable · Monitoring · Testing · Inspection',
     image: 'https://www.ftechenterprises.com/wp-content/uploads/2021/01/fire-alarms-1.jpg',
@@ -70,7 +50,7 @@ export const SERVICES = [
   },
   {
     id: 'sprinkler',
-    icon: 'SP',
+    // icon: 'SP',
     title: 'Fire Sprinkler Systems',
     subtitle: 'Wet Pipe · Dry Pipe · Pre-Action · Deluge · Foam · NFPA 25',
     image: 'https://img.magnific.com/premium-photo/photo-fire-sprinkler-system-there-are-red-sprinkler-heads-ceiling_1243994-7573.jpg?semt=ais_hybrid&w=740&q=80',
@@ -94,7 +74,7 @@ export const SERVICES = [
   },
   {
     id: 'hydrant',
-    icon: 'HY',
+    // icon: 'HY',
     title: 'Hydrant ',
     subtitle: 'Internal Hydrant · External Hydrant · Landing Valves · Jockey Pumps',
     image: '/Hydrant.png',
@@ -117,28 +97,8 @@ export const SERVICES = [
     brands: ['Kirloskar', 'Grundfos', 'Wilo', 'Minimax', 'HD Fire'],
   },
   {
-    id: 'network',
-    icon: 'NI',
-    title: 'Network Infrastructure',
-    subtitle: 'Structured Cabling · Data Centers · Voice · Automation',
-    image: 'https://media.istockphoto.com/id/2148113350/photo/data-center-server-racks-it-modern-hardware-server-room-data-storage-center-database.jpg?s=612x612&w=0&k=20&c=6rMsjA_oGVjsSpFCed-Cg6h-9XPn8I3vPg8FWOQulos=',
-    shortDesc: 'High-performance network backbone solutions delivered by skilled connectivity professionals.',
-    longDesc: `JKIS was established with a concept of providing professional & effective services for
-    the critical backbone of communication systems. Our customer-driven, high-performance team
-    of consultants, project managers, and technicians brings strong field experience in Data,
-    Voice, CCTV structured cabling, and Data Center infrastructure cabling services.`,
-    features: [
-      'Structured cabling (Cat6A / Fiber)',
-      'Data center design & implementation',
-      'Voice & unified communications',
-      'Office Wi-Fi & wireless infrastructure',
-      'Network rack & server room setup',
-      'End-to-end project management',
-    ],
-  },
-  {
     id: 'surveillance',
-    icon: 'CC',
+    // icon: 'CC',
     title: 'Security Surveillance (CCTV)',
     subtitle: 'IP Cameras · AI Analytics · Remote Monitoring · DVR/NVR',
     image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80',
@@ -160,7 +120,7 @@ export const SERVICES = [
   },
   {
     id: 'smart-automation',
-    icon: 'SA',
+    // icon: 'SA',
     title: 'Smart Office Automation',
     subtitle: 'IoT · Smart Lighting · HVAC Control · Energy Management',
     image: '/smart_office_automation.png',
@@ -198,10 +158,10 @@ export const PROJECTS = [
     id: 'manipal-Ayurvedic pharmacy',
     category: 'Healthcare',
     categoryTag: 'HC',
-    title: 'Manipal Hospitals — Fire & BMS Upgrade',
+    title: 'Manipal Hospitals — Fire System Upgrade',
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80',
-    desc: 'Mission-critical fire alarm system upgrade and Integrated Building Management System (IBMS) integration across a live 350-bed hospital campus — executed with zero disruption to patient care operations.',
-    services: ['Fire Alarm Systems', 'Building Management Systems'],
+    desc: 'Mission-critical fire alarm system upgrade across a live 350-bed hospital campus — executed with zero disruption to patient care operations.',
+    services: ['Fire Alarm Systems'],
     client: 'Manipal Hospitals',
   },
   // {

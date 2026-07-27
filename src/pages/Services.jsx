@@ -142,7 +142,7 @@ export default function Services() {
     <>
       <Helmet>
         <title>Services | JK Integrated Solutions - Fire Safety, CCTV, Access Control India</title>
-        <meta name="description" content="JKIS offers fire alarm systems, sprinkler systems, hydrant systems, CCTV surveillance, access control, biometrics, network infrastructure, building management & smart office automation across India." />
+        <meta name="description" content="JKIS offers fire alarm systems, sprinkler systems, hydrant systems, CCTV surveillance, access control, biometrics, and smart office automation across India." />
         <link rel="canonical" href="https://www.jkis.in/services" />
       </Helmet>
 
@@ -157,7 +157,7 @@ export default function Services() {
               Comprehensive Smart<br /><span className="gold">Integration Services</span>
             </h1>
             <p className={`page-hero__sub fade-in delay-1 ${heroIn ? 'visible' : ''}`}>
-              Eight core service verticals engineered for reliability, backed by certified professionals
+              Six core service verticals engineered for reliability, backed by certified professionals
               and top-tier international brands.
             </p>
           </div>
@@ -168,7 +168,6 @@ export default function Services() {
           <div className="container services-nav__inner">
             {SERVICES.map(s => (
               <a key={s.id} href={`#${s.id}`} className="services-nav__item">
-                <span>{s.icon}</span>
                 <span>{s.title.split('(')[0].trim()}</span>
               </a>
             ))}

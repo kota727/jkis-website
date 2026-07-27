@@ -8,10 +8,10 @@ import './Home.css';
 /* ─── HERO ─── */
 function Hero() {
   const heroServices = [
-    { id: 'fire-alarm', icon: 'FA', title: 'Fire Alarm Systems' },
-    { id: 'sprinkler', icon: 'SP', title: 'Fire Sprinkler System' },
-    { id: 'surveillance', icon: 'CC', title: 'CCTV' },
-    { id: 'access-control', icon: 'AC', title: 'Access Control' },
+    { id: 'fire-alarm', title: 'Fire Alarm Systems' },
+    { id: 'sprinkler', title: 'Fire Sprinkler System' },
+    { id: 'surveillance', title: 'CCTV' },
+    { id: 'access-control', title: 'Access Control' },
   ];
 
   return (
@@ -47,7 +47,6 @@ function Hero() {
           <div className="hero__card-grid">
             {heroServices.map(service => (
               <div key={service.id} className="hero__mini-card">
-                <span className="hero__mini-icon">{service.icon}</span>
                 <span className="hero__mini-label">{service.title}</span>
               </div>
             ))}
@@ -118,7 +117,6 @@ function ServicesPreview() {
             >
               <div className="service-card__img" style={{ backgroundImage: `url(${s.image})` }} />
               <div className="service-card__body">
-                <span className="service-card__icon">{s.icon}</span>
                 <h3 className="h3">{s.title}</h3>
                 <p className="service-card__sub">{s.subtitle}</p>
                 <p className="service-card__desc">{s.shortDesc}</p>
@@ -167,7 +165,6 @@ function WhyChoose() {
                 key={w.title}
                 className={`why-card fade-in delay-${(i % 3) + 1} ${inView ? 'visible' : ''}`}
               >
-                <span className="why-card__icon">{w.icon}</span>
                 <h4 className="why-card__title">{w.title}</h4>
                 <p className="why-card__desc">{w.desc}</p>
               </div>
@@ -283,7 +280,7 @@ export default function Home() {
         <title>JK Integrated Solutions | Smart Safety & Security Systems India</title>
         <meta
           name="description"
-          content="JKIS delivers end-to-end fire alarm, CCTV surveillance, access control, biometrics, network infrastructure & building automation across India. 500+ projects delivered."
+          content="JKIS delivers end-to-end fire alarm, CCTV surveillance, access control, biometrics, and intelligent automation across India. 500+ projects delivered."
         />
         <link rel="canonical" href="https://www.jkis.in/" />
       </Helmet>

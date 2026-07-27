@@ -4,9 +4,7 @@ import './Footer.css';
 
 const services = [
   'Access Control & Biometrics',
-  'Building Management Systems',
   'Fire Alarm Systems',
-  'Network Infrastructure',
   'Security Surveillance (CCTV)',
   'Smart Office Automation',
 ];

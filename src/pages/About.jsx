@@ -6,9 +6,9 @@ import Partners from './Partners';
 import './About.css';
 
 const values = [
-  { icon: 'Our Mission', title: 'Our Mission', desc: 'To promptly attend to the fire safety and protection needs of our customers based on the nature of their business, in line with government regulations, using well-trained human resources and internationally certified systems.' },
-  { icon: 'Our Vision', title: 'Our Vision', desc: 'To become one of the leaders in the Indian safety and security systems industry in such a way that others will follow our proven practices and principles.' },
-  { icon: 'Our Values', title: 'Our Values', desc: 'Focus on quality and innovation. Honour our commitments. Conduct business in a responsible, ethical and sustainable way. Lead by example. Work as a team.' },
+  { title: 'Our Mission', desc: 'To promptly attend to the fire safety and protection needs of our customers based on the nature of their business, in line with government regulations, using well-trained human resources and internationally certified systems.' },
+  { title: 'Our Vision', desc: 'To become one of the leaders in the Indian safety and security systems industry in such a way that others will follow our proven practices and principles.' },
+  { title: 'Our Values', desc: 'Focus on quality and innovation. Honour our commitments. Conduct business in a responsible, ethical and sustainable way. Lead by example. Work as a team.' },
 ];
 
 const principles = [
@@ -20,7 +20,7 @@ const principles = [
 
 const milestones = [
   { year: '2021', event: 'Founded in Bangalore with a vision to transform safety & security' },
-  { year: '2022', event: 'Expanded service portfolio to include Building Management Systems' },
+  { year: '2022', event: 'Expanded service portfolio to include advanced fire and security integrations' },
   { year: '2023', event: 'Achieved 16+ prestigious client partnerships across India' },
   { year: '2024', event: '500+ successful projects delivered pan-India' },
   { year: '2025', event: 'Recognized as trusted integrator by leading MNC brands' },
@@ -79,7 +79,7 @@ export default function About() {
               <p>
                 JK Integrated Solutions (JKIS) is a Bangalore-based systems integrator offering end-to-end
                 solutions in fire safety & protection, security surveillance, access control, biometrics,
-                network infrastructure, and intelligent building automation.
+                fire protection, security, and intelligent automation.
               </p>
               <p style={{marginTop:'16px'}}>
                 We are a customer-driven, high-performance company powered by skilled connectivity
@@ -117,7 +117,6 @@ export default function About() {
             <div className="mvv__grid">
               {values.map((v, i) => (
                 <div key={v.title} className={`mvv-card fade-in delay-${i+1} ${missionIn ? 'visible' : ''}`}>
-                  <span className="mvv-card__icon">{v.icon}</span>
                   <h3 className="h3">{v.title}</h3>
                   <p>{v.desc}</p>
                 </div>

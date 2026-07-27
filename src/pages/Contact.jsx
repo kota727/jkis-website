@@ -14,8 +14,6 @@ const services = [
   'Fire Alarm Systems',
   'Security Surveillance (CCTV)',
   'Access Control & Biometrics',
-  'Network Infrastructure',
-  'Building Management Systems',
   'Smart Office Automation',
   'Multiple Services',
 ];
