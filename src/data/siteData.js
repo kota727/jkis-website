@@ -208,20 +208,22 @@ export const PROJECTS = [
 
 // Clients sorted alphabetically
 export const CLIENTS = [
-  { name: 'ABB',              logo: 'https://logo.clearbit.com/abb.com' },
-  { name: 'Bosch',            logo: 'https://logo.clearbit.com/bosch.com' },
-  { name: 'Cars24',           logo: 'https://logo.clearbit.com/cars24.com' },
-  { name: 'Cisco',            logo: 'https://logo.clearbit.com/cisco.com' },
-  { name: 'Flipkart',         logo: 'https://logo.clearbit.com/flipkart.com' },
-  { name: 'Herman Miller',    logo: 'https://logo.clearbit.com/hermanmiller.com' },
-  { name: 'Hikvision',        logo: 'https://logo.clearbit.com/hikvision.com' },
-  { name: 'Honeywell',        logo: 'https://logo.clearbit.com/honeywell.com' },
-  { name: 'Manipal Hospitals',logo: 'https://logo.clearbit.com/manipalhospitals.com' },
-  { name: 'NVent',            logo: 'https://logo.clearbit.com/nvent.com' },
-  { name: 'Siemens',          logo: 'https://logo.clearbit.com/siemens.com' },
-  { name: 'Tata',             logo: 'https://logo.clearbit.com/tata.com' },
-  { name: 'Yazaki',           logo: 'https://logo.clearbit.com/yazaki.com' },
-  { name: 'Zudio',            logo: 'https://logo.clearbit.com/zudio.com' },
+  { name: 'ABB', logo: 'https://www.jkis.in/ABB.png' },
+  { name: 'Aishaya', logo: 'https://www.jkis.in/images/aishaya.png' },
+  { name: 'Bicon', logo: 'https://www.jkis.in/images/bicon.png' },
+  { name: 'Bosch', logo: 'https://www.jkis.in/images/bosch.png' },
+  { name: 'Cars24', logo: 'https://www.jkis.in/images/cars.png' },
+  { name: 'Energy Corp', logo: 'https://www.jkis.in/images/energy.png' },
+  { name: 'Flipkart', logo: 'https://www.jkis.in/images/flipkart.png' },
+  { name: 'Government of India', logo: 'https://www.jkis.in/images/gov.png' },
+  { name: 'Herman Miller', logo: 'https://www.jkis.in/herman%20miller.png' },
+  { name: 'Manipal Hospitals', logo: 'https://www.jkis.in/images/manipal.png' },
+  { name: 'Metro Rail', logo: 'https://www.jkis.in/images/metro.jpg' },
+  { name: 'NVent', logo: 'https://www.jkis.in/images/nvent.png' },
+  { name: 'Siemens', logo: 'https://www.jkis.in/images/download%20-4-.png' },
+  { name: 'Tata', logo: 'https://www.jkis.in/images/tata.png' },
+  { name: 'Yazaki', logo: 'https://www.jkis.in/images/yazaki.png' },
+  { name: 'Zudio', logo: 'https://www.jkis.in/images/zudio.png' },
 ];
 
 export const STATS = [
