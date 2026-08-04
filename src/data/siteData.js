@@ -210,7 +210,7 @@ export const PROJECTS = [
 export const CLIENTS = [
   { name: 'ABB', logo: '/abblogo.png' },
   { name: 'Alshaya', logo: '/alshaya.png' },
-  { name: 'Apollo powersystems' , logo:'./apollopowersystems.png'},
+  { name: 'Apollo powersystems' , logo:'./apollopowersystems .png'},
   { name:'Avery Dennison' , logo:'/averydennison.png'},
   { name: 'Biocon', logo: '/Biocon.png' },
   { name: 'Bosch', logo: '/boschlogo.png' },
@@ -222,7 +222,7 @@ export const CLIENTS = [
   {name:'Fluiconnecto',logo:'./fluiconnecto.png'},
   { name: 'Government of India', logo: '/artofliving.png' },
   { name: 'Herman Miller', logo: '/hermanlogo.png' },
-  {name:'Hafele',logo:'./hafelelogo.png'},
+  {name:'Hafele',logo:'./Hafelelogo.png'},
   {name:'IAC',logo:'./IAClogo.png'},
   {name:'Koliwad',logo:'./koliwadlogo.png'},
   {name:'Leroy Grand',logo:'./leroygrand.png'},
