@@ -244,7 +244,7 @@ export const CLIENTS = [
   {name:' Toll',logo:'./toll.png'},
   {name:'tower industries ' , logo:'./tower.png'},
   {name:'ullas agarbathi' , logo:'./ullas.png'},
-  {name:'vegas ' , logo:'./vegas.png'},
+  {name:'vegas' , logo:'./vegas.png'},
   { name: 'Yazaki', logo: './yazaki.png' },
   { name: 'Zudio', logo: './zudiologo.png' },
   
